@@ -5,7 +5,7 @@ exports.cloudinaryConnect = () => {
     const { CLOUD_NAME, API_KEY, API_SECRET } = process.env;
 
     if (!CLOUD_NAME || !API_KEY || !API_SECRET) {
-      console.error("Missing Cloudinary Environment Variables.");
+      console.error("missing cloudinary environment variables.");
       return;
     }
 
@@ -15,8 +15,8 @@ exports.cloudinaryConnect = () => {
       api_secret: API_SECRET,
     });
 
-    console.log("Cloudinary Connected Successfully.");
+    console.log("cloudinary connected successfully.");
   } catch (error) {
-    console.error("An Error Occurred While Configuring Cloudinary:", error);
+    console.error("An Error Occurred While cloudinary is being configured:", error);
   }
 };
